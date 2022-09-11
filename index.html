@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="e54 (2)n">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Ship</title>
+    
+    <script src="src/gameBoard.js" type="module" defer></script>
+    <script src="src/script.js" type="module" defer></script>
+    <script src="src/ship.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <section class="place-ship-container">
+        <form action="">
+            <label for="boardSize">Board Size</label>
+            <div class="ship-units">
+                <input data-size type="number">
+            </div>
+            <label for="carrier">Carrier (5 units)</label>
+            <div class="ship-units">
+                <input data-carrierX type="number" placeholder="row">
+                <input data-carrierY type="number" placeholder="column">
+            </div>
+            <label for="battleship">Battleship (4 units)</label>
+            <div class="ship-units">
+                <input data-battleshipX type="number" placeholder="row">
+                <input data-battleshipY type="number" placeholder="column">
+            </div>
+            <label for="cruiser">Cruiser (3 units)</label>
+            <div class="ship-units">
+                <input data-cruiserX type="number" placeholder="row">
+                <input data-cruiserY type="number" placeholder="column">
+            </div>
+            <label for="submarine">Submarine (3 units)</label>
+            <div class="ship-units">
+                <input data-subX type="number" placeholder="row">
+                <input data-subY type="number" placeholder="column">
+            </div>
+            <label for="destroyer">Destroyer (2 units)</label>
+            <div class="ship-units">
+                <input data-destroyerX type="number" placeholder="row">
+                <input data-destroyerY type="number" placeholder="column">
+            </div>
+    
+        </form>
+    </section> -->
+    <section class="draggable">
+        <h1>Place Your Ships!</h1>
+        <section class="draggable-item" draggable="true" data-destroyer id="destroyer">
+           <h2>Destroyer</h2>
+            <div class="ship-object" id="destroyerShip" >
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+            </div>
+        </section>
+        <section class="draggable-item" draggable="true" data-submarine id="submarine">
+            <h2>Submarine</h2>
+            <div class="ship-object" id="submarineShip">
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+            </div>
+        </section>
+        <section class="draggable-item" draggable="true" data-cruiser id="cruiser">
+            <h2>Cruiser</h2>
+            <div class="ship-object" id="cruiserShip">
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+            </div>
+        </section>
+        <section class="draggable-item" draggable="true" data-battleship id="battleship">
+            <h2>Battleship</h2>
+            <div class="ship-object" id="battleshipShip">
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+            </div>
+        </section>
+        <section class="draggable-item" draggable="true" data-carrier id="carrier">
+            <h2>Carrier</h2>
+            <div class="ship-object" id="carrierShip" >
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+                <div class="ship-unit"></div>
+            </div>
+        </section>
+        <button data-unitsSubmit type="button">Let's Battle!</button>
+    </section>
+    <section class="grids">
+        <section class="board hide" id="enemyGrid"></section>
+        <section class="board red" id="playerGrid"></section>
+    </section>
+    <div class="score"></div>
+</body>
+
+
+<!-- <section data-name="one" data-status="active" data-score class="ship">
+            <div data-id="1" data-status="not hit" class="unit"></div>
+            <div data-id="2" data-status="not hit" class="unit"></div>
+            <div data-id="3" data-status="not hit" class="unit"></div>
+            <div data-id="4" data-status="not hit" class="unit"></div>
+        </section>
+        <section data-name="two" data-status="active" data-score class="ship">
+            <div data-id="1" data-status="not hit" class="unit"></div>
+            <div data-id="2" data-status="not hit" class="unit"></div>
+            <div data-id="3" data-status="not hit" class="unit"></div>
+            <div data-id="4" data-status="not hit" class="unit"></div>
+        </section>
+        <section data-name="three" data-status="active" data-score class="ship">
+            <div data-id="1" data-status="not hit" class="unit"></div>
+            <div data-id="2" data-status="not hit" class="unit"></div>
+            <div data-id="3" data-status="not hit" class="unit"></div>
+            <div data-id="4" data-status="not hit" class="unit"></div>
+        </section> -->

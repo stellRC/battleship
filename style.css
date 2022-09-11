@@ -1,0 +1,90 @@
+body {
+    height: 100vh;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.grids {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.board {
+    display: grid;
+    width: 40vw;
+    height: 40vh;
+}
+
+.ship {
+    border: 1px solid pink;
+    display: grid;
+}
+
+
+.grid-unit {
+    outline: 1px solid blue;
+    background-color: transparent;
+}
+
+.red .grid-unit {
+    outline: 1px solid red;
+}
+
+
+.draggable {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.draggable-item {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.ship-object {
+    display: grid;
+    width: 20vw;
+    height: 2vh;
+}
+
+.ship-unit {
+    outline: 1px solid red;
+}
+
+#destroyerShip {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+#submarineShip,
+#cruiserShip {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#battleshipShip {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#carrierShip {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.hide {
+    display: none;
+}
+
+.drag-over {
+    border: dashed 3px red;
+}
